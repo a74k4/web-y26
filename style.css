@@ -1,0 +1,169 @@
+body {
+    font-family: Gill Sans, sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
+    background-color: #D7D9F5;
+}
+
+header {
+    background-color: #3C42C2;
+    margin: 0;
+    padding: 10px 10px 20px 50px;
+}
+
+.logoTitleBox {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 15px 0;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 0 0 20px;
+}
+
+nav {
+    width: 450px;
+    font-size: 20px;
+}
+
+nav > a {
+    color: #FFFFFF;
+    margin: 0 10px 0 10px;
+}
+
+a {
+    color: #260F01;
+    text-decoration: none;
+}
+
+main {
+    padding: 10px 50px 10px 50px;
+}
+
+h2 {
+    color: #060833;
+    text-transform: uppercase;
+}
+
+.codeBlock {
+    background-color: #F5F5F5;
+    padding: 10px;
+    white-space: pre;
+    width: max-content;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+code {
+    color: #1D205C;
+    font-size: 8px;
+    line-height: 1px;
+    font-family: "JetBrains Mono", monospace;
+    /*text-transform: uppercase;*/
+    /*font-weight: bold;*/
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+.liHeaderPositioning {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul > li::before {
+    content: "•";
+    color: #3C42C2;
+    /*color: #FFFFFF;*/
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+ol {
+    counter-reset: list-counter;
+}
+
+ol > li::before {
+    counter-increment: list-counter;
+    content: counter(list-counter) ".";
+    color: #3C42C2;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.liLeftContent {
+    display: flex;
+    align-items: center;
+}
+
+.liTitle {
+    font-size: 18px;
+}
+
+.liImg {
+    width: 18px;
+    height: 18px;
+    margin: 0px 5px 0px 5px;
+    display: inline-block;
+}
+
+.liDate {
+    font-size: 12px;
+    color: #3C42C2;
+    float: right;
+}
+.liDescription {
+    font-size: 14px;
+    color: #1D205C;
+    padding: 5px 10px 5px 10px;
+}
+
+p {
+    margin: 0;
+}
+
+.aboutMeText {
+    color: #1D205C;
+    font-size: 16px;
+    padding: 0 0 0 40px;
+}
+
+footer {
+    padding: 10px 0 30px 50px;
+    background-color: #3C42C2;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+blockquote {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.contacts {
+    color: #FFFFFF;
+}
+
+.contacts > h4 {
+    margin: 0;
+}
+
+.contacts > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
