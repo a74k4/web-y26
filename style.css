@@ -1,16 +1,54 @@
+@media screen and (min-width: 1024px) {
+    .code-block {
+        background-color: #F5F5F5;
+        padding: 5px;
+        white-space: pre;
+        width: max-content;
+        box-shadow: 5px 5px 10px #888888;
+    }
+    main {
+        padding: 190px 50px 10px 50px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .code-block{
+        content-visibility: hidden;
+    }
+    .navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation__link{
+        padding: 5px 0 5px 0;
+    }
+    main {
+        padding: 270px 50px 10px 50px;
+    }
+}
+
 body {
     font-family: Gill Sans, sans-serif;
     font-size: 14px;
     line-height: 15px;
     padding: 0;
     margin: 0;
-    background-color: #D7D9F5;
+    background-color: #D6E0FF;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
 }
 
 header {
-    background-color: #3C42C2;
+    background-color: #20398E;
     margin: 0;
-    padding: 10px 10px 20px 50px;
+    padding: 20px 10px 20px 50px;
+    position: fixed;
+    width: 100%;
 }
 
 .logo__title-box {
@@ -42,26 +80,17 @@ nav > a {
 }
 
 a {
-    color: #260F01;
+    color: #BDCCFF;
     text-decoration: none;
 }
 
-main {
-    padding: 10px 50px 10px 50px;
-}
+
 
 h2 {
     color: #060833;
     text-transform: uppercase;
 }
 
-.code-block {
-    background-color: #F5F5F5;
-    padding: 10px;
-    white-space: pre;
-    width: max-content;
-    box-shadow: 5px 5px 10px #888888;
-}
 
 code {
     color: #1D205C;
@@ -142,8 +171,9 @@ p {
 }
 
 footer {
+    margin-top: 10px;
     padding: 10px 0 30px 50px;
-    background-color: #3C42C2;
+    background-color: #20398E;
     color: #FFFFFF;
     line-height: 20px;
 }
@@ -167,3 +197,30 @@ blockquote {
     margin: 0;
 }
 
+.table__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__head {
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
