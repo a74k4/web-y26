@@ -6,6 +6,8 @@
     <meta name="description" content="Интернет портфолио">
 <!--    <link href="outlines.css" rel="stylesheet">-->
     <link rel="stylesheet" href="style.css">
+    <script src="js/loadTime.js"></script>
+    <script src="js/menu.js"></script>
     <title>KPACOTA</title>
 </head>
 <body>
@@ -16,31 +18,16 @@
             <div class = "title"><h1>KPACOTA</h1></div>
         </div>
         <nav class="navigation">
-            <a class="navigation__link" href = "#">Стек</a>
-            <a class="navigation__link" href = "#">Опыт работы</a>
-            <a class="navigation__link" href = "#">Обо мне</a>
-            <a class="navigation__link" href = "#">Контакты</a>
+            <a class="navigation__link" href = "index.html">Кратко</a>
+            <a class="navigation__link" href = "pages/stack.html">Стек</a>
+            <a class="navigation__link" href = "pages/experience.html">Опыт работы</a>
+            <a class="navigation__link" href = "pages/aboutMe.html">Обо мне</a>
+            <a class="navigation__link" href = "pages/contacts.html">Контакты</a>
         </nav>
     </header>
     <main>
-        <div class = "code-block"><code>float Q_rsqrt( float number )
-{
-long i;
-float x2, y;
-const float threehalfs = 1.5F;
-
-x2 = number * 0.5F;
-y  = number;
-i  = * ( long * ) &y;                           // страшное хакерство на битовом уровне
-i  = 0x5f3759df - ( i >> 1 );                   // что за чёрт?
-y  = * ( float * ) &i;
-y  = y * ( threehalfs - ( x2 * y * y ) );       // 1-я итерация
-//	y  = y * ( threehalfs - ( x2 * y * y ) );   // 2-я итерация, можно убрать
-
-return y;
-}</code></div>
         <section>
-            <h2>Stack</h2>
+            <h2>Стек</h2>
             <ul>
                 <li>
                     <div class = "li__left-content">
@@ -64,7 +51,7 @@ return y;
         </section>
 
         <section>
-            <h2>Experience</h2>
+            <h2>Опыт работы</h2>
             <ol>
                 <li>
                         <div class = "li__header-positioning">
@@ -102,53 +89,31 @@ return y;
             </ol>
         </section>
         <section>
-            <h2>About me</h2>
+            <h2>Обо мне</h2>
             <div class = "about-me__text">
                 <p>
                     Я - <strong>разработчик</strong>, мне <strong>21</strong> год.
                 </p>
             </div>
         </section>
-        <section>
-            <h2>Таблица xD</h2>
-            <div class="table-container">
-                <table>
-                    <thead class="table__head">
-                    <tr>
-                        <th>Оценки</th>
-                        <th>1 семестр</th>
-                        <th>2 семестр</th>
-                        <th>3 семестр</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th>Математический анализ</th>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <th>Программирование</th>
-                        <td>4</td>
-                        <td>4</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <th>Английскеий язык</th>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <th>Физкультура</th>
-                        <td>5</td>
-                        <td>5</td>
-                        <td>5</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+        <section class = "code-section">
+            <h2>Мудрость предков</h2>
+            <div class = "code-block"><code>float Q_rsqrt( float number )
+{
+long i;
+float x2, y;
+const float threehalfs = 1.5F;
+
+x2 = number * 0.5F;
+y  = number;
+i  = * ( long * ) &y;                           // страшное хакерство на битовом уровне
+i  = 0x5f3759df - ( i >> 1 );                   // что за чёрт?
+y  = * ( float * ) &i;
+y  = y * ( threehalfs - ( x2 * y * y ) );       // 1-я итерация
+//	y  = y * ( threehalfs - ( x2 * y * y ) );   // 2-я итерация, можно убрать
+
+return y;
+}</code></div>
         </section>
     </main>
 </div>
@@ -169,6 +134,8 @@ return y;
                 <li>email: berserktears@icloud.com</li>
             </ul>
         </section>
+        <div class="load-time__text">
+        </div>
     </footer>
 </body>
 </html>

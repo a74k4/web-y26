@@ -9,9 +9,16 @@
     main {
         padding: 190px 50px 10px 50px;
     }
+    .navigation{
+        display: flex;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 1024px){
+    .code-section{
+        content-visibility: hidden;
+    }
     .code-block{
         content-visibility: hidden;
     }
@@ -19,11 +26,8 @@
         display: flex;
         flex-direction: column;
     }
-    .navigation__link{
-        padding: 5px 0 5px 0;
-    }
     main {
-        padding: 270px 50px 10px 50px;
+        padding: 300px 50px 10px 50px;
     }
 }
 
@@ -40,13 +44,13 @@ body {
 .wrapper{
     display: flex;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 header {
     background-color: #20398E;
-    margin: 0;
     padding: 20px 10px 20px 50px;
+    margin: 0;
     position: fixed;
     width: 100%;
 }
@@ -84,7 +88,18 @@ a {
     text-decoration: none;
 }
 
+.navigation__link{
+    padding: 5px 0 5px 0;
+}
 
+.navigation__link:hover {
+    color: #4CAF50;
+    border-radius: 4px;
+}
+
+.navigation__link.active{
+    color:black;
+}
 
 h2 {
     color: #060833;
@@ -223,4 +238,28 @@ tbody tr:nth-child(even) {
 
 tbody tr:nth-child(odd) {
     background-color: #fff;
+}
+
+.stack-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0 20px 0;
+}
+
+.stack-section__content{
+    font-size: 18px;
+    padding: 5px 0 5px 0;
+}
+
+.stack-section__links {
+    display: flex;
+    flex-direction: column;
+}
+
+.stack-section__link {
+    padding: 10px 0 5px 0;
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
 }
