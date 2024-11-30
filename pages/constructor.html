@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../style.css">
     <script src="../js/loadTime.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/constructor.js"></script>
     <title>KPACOTA Stack About Me</title>
 </head>
 <body>
@@ -24,13 +25,16 @@
         </nav>
     </header>
     <main>
-        <section>
-            <div class = "about-me__text">
-                <p>
-                    Я - <strong>разработчик</strong>, мне <strong>21</strong> год.
-                </p>
+            <h1>Список дел</h1>
+            <form id="taskForm" class="form">
+                <label for="taskText">Введите задание:</label>
+                <input type="text" id="taskText"  name="taskText">
+
+                <button type="submit">Добавить</button>
+            </form>
+
+            <div id="container">
             </div>
-        </section>
     </main>
 </div>
 <footer>
@@ -50,8 +54,6 @@
             <li>email: berserktears@icloud.com</li>
         </ul>
     </section>
-    <div class="load-time__text">
-    </div>
 </footer>
 </body>
 </html>
