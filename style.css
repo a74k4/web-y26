@@ -226,10 +226,13 @@ table {
     background-color: white;
 }
 
+th:first-child, td:first-child {
+    width: 10%;
+}
+
 th, td {
     padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
+    text-align: left;
 }
 
 tbody tr:nth-child(even) {
