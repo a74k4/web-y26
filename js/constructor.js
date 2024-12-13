@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        const text = document.getElementById('taskText').value;
+        const text = event.target.taskText.value;
 
         addToArray(text)
     });
@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         table.appendChild(headerRow);
 
-        for (let i = 0; i < array.length; i++) {
+        for (let i = array.length - 1; i > 0; i--) {
             const row = document.createElement('tr');
             const dayCell = document.createElement('td');
-            dayCell.textContent = (i + 1).toString();
+            dayCell.textContent = (i).toString();
             row.appendChild(dayCell);
 
             const taskCell = document.createElement('td');
