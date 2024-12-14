@@ -266,3 +266,27 @@ tbody tr:nth-child(odd) {
     color: #4CAF50;
     font-size: 18px;
 }
+
+.preloader {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #BDCCFF;
+    border-top: 5px solid #060833;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

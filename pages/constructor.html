@@ -22,6 +22,7 @@
             <a class="navigation__link" href = "aboutMe.html">Обо мне</a>
             <a class="navigation__link" href = "contacts.html">Контакты</a>
             <a class="navigation__link" href = "constructor.html">Конструктор</a>
+            <a class="navigation__link" href = "posts.html">Посты</a>
         </nav>
     </header>
     <main>
@@ -29,6 +30,9 @@
             <form id="taskForm" class="form">
                 <label for="taskText">Введите задание:</label>
                 <input type="text" id="taskText"  name="taskText">
+
+                <label for="taskTag">Введите тег:</label>
+                <input id="taskTag" name="taskTag" data-list="work, school, university, home" data-multiple>
 
                 <button type="submit">Добавить</button>
             </form>
@@ -56,4 +60,8 @@
     </section>
 </footer>
 </body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.5/awesomplete.min.js"></script>
+<script src="../js/awesomplete.js"></script>
+
 </html>

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../style.css">
     <script src="../js/loadTime.js"></script>
     <script src="../js/menu.js"></script>
-    <title>KPACOTA Stack</title>
+    <title>KPACOTA Stack About Me</title>
 </head>
 <body>
 <div class="wrapper">
@@ -22,47 +22,19 @@
             <a class="navigation__link" href = "contacts.html">Контакты</a>
             <a class="navigation__link" href = "constructor.html">Конструктор</a>
             <a class="navigation__link" href = "posts.html">Посты</a>
-
         </nav>
     </header>
     <main>
-        <section class="stack-section">
-            <h2>
-                NodeJs
-            </h2>
-            <div class="stack-section__content">
-                Разработывал бекенд веб страницы и телеграмм бота.
-            </div>
-            <div class="stack-section__links">
-                <a class="stack-section__link" href="https://github.com/a74k4">Проект1</a>
-                <a class="stack-section__link" href="https://github.com/a74k4">Проект2</a>
-            </div>
-        </section>
-        <section class="stack-section">
-            <h2>
-                C++
-            </h2>
-            <div class="stack-section__content">
-                Разработывал программы для анализа данных.
-            </div>
-            <div class="stack-section__links">
-                <a class="stack-section__link" href="https://github.com/a74k4">Проект1</a>
-                <a class="stack-section__link" href="https://github.com/a74k4">Проект2</a>
-            </div>
-        </section>
-          <section class="stack-section">
-            <h2>
-                Java
-            </h2>
-            <div class="stack-section__content">
-                Разработывал программы для анализа данных.
-            </div>
-            <div class="stack-section__links">
-                <a class="stack-section__link" href="https://github.com/a74k4">Проект1</a>
-                <a class="stack-section__link" href="https://github.com/a74k4">Проект2</a>
-            </div>
-          </section>
-     </main>
+        <h1> Посты </h1>
+        <div id="posts__list_container" class="posts_list">
+            <ol id = "posts__list">
+            </ol>
+        </div>
+        <div class="preloader" id="preloader">
+            <div class ="spinner"></div>
+        </div>
+        <div class="error" id="error"></div>
+    </main>
 </div>
 <footer>
     <section>
@@ -85,4 +57,5 @@
     </div>
 </footer>
 </body>
+<script src="../js/fetch.js"></script>
 </html>
